@@ -1,0 +1,14 @@
+/* We can provide another widely supported value to a CSS property which improves the browser compatibility. A fallback value for
+ improved browser compatibility. */
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
