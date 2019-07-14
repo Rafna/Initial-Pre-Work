@@ -1,0 +1,18 @@
+/* Order of styling matters in CSS but order of class declaration doesn't matters in HTML. Here pink-text class styling is done
+before blue-text class styling. But the color of h1 element came as blue-text class styling even after changing the order of
+class declaration in the html. This means one element style can be override with another style if second style is given later.
+*/
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
